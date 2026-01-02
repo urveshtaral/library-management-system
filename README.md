@@ -38,3 +38,5 @@ Follow these steps to set up the project locally:
 ```bash
 git clone https://github.com/urveshtaral/library-management-system.git
 cd library-management-system
+
+2️⃣ Backend Setup
