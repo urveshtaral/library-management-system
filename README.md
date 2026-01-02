@@ -99,6 +99,6 @@ library-management-system/
 You can download the output recording (demo/demo.mp4) to see how the app works.
 
 👩‍💻 Author
-
 urveshtaral
 GitHub: @urveshtaral
+
