@@ -1,4 +1,5 @@
-📚 Library Management System (LMS) 🚀
+Library Management System (LMS) 🚀
+
 A modern, full-stack MERN application designed to simplify library operations. Whether it's managing a massive book collection, tracking student borrowings, or handling administrative tasks, this system provides a seamless and responsive experience.
 
 🌟 Key Features
@@ -53,26 +54,41 @@ cd ../frontend
 npm install
 npm start
 📁 Project Structure
-Plaintext
 
-├── backend/
-│   ├── models/      # MongoDB Schemas (Book, User, Transaction)
-│   ├── routes/      # Express API Endpoints
-│   ├── middleware/  # Auth & Admin protectors
-│   └── server.js    # Entry point
-├── frontend/
+library-management-system/
+├── backend/                    # Node.js + Express REST API
+│   ├── models/                # MongoDB Schemas (Book, User, Transaction, Event, Notification)
+│   ├── routes/                # Express API Endpoints (auth, books, users, events, etc.)
+│   ├── middleware/            # Authentication, Authorization, Validation
+│   ├── config/                # Database, Cloudinary configurations
+│   ├── utils/                 # Helper functions, email service
+│   ├── logs/                  # Application logs
+│   ├── .env.example           # Environment variables template
+│   ├── package.json           # Backend dependencies
+│   └── server.js              # Entry point for backend server
+├── frontend/                  # React Single Page Application
 │   ├── src/
-│   │   ├── components/ # Reusable UI (Navbar, Footer, Cards)
-│   │   ├── pages/      # Home, Dashboard, Login, Inventory
-│   │   └── assets/     # Stylesheets (CSS) and Images
-│   └── package.json
-└── README.md
+│   │   ├── components/        # 70+ Reusable UI components
+│   │   ├── pages/             # Page components (Home, Dashboard, Login, etc.)
+│   │   ├── dashboard/         # Admin and Member dashboard components
+│   │   ├── context/           # React Context for state management
+│   │   ├── services/          # API service functions
+│   │   ├── utils/             # Helper functions, constants
+│   │   ├── assets/            # Images and static files
+│   │   ├── App.js             # Main application component
+│   │   └── index.js           # React entry point
+│   ├── public/                # Static public files
+│   ├── .env.example           # Frontend environment variables
+│   └── package.json           # Frontend dependencies
+├── docker-compose.yml         # Multi-container Docker setup
+├── .gitignore                 # Git ignore rules
+├── README.md                  # Project documentation (this file)
+└── postman_collection.json    # API testing collection
 
 📽️ Demo
 You can download the output recording (demo/demo.mp4) to see how the app works.
 
-.
-
 👩‍💻 Author
 urveshtaral
 GitHub: @urveshtaral
+
