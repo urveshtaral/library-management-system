@@ -1,0 +1,59 @@
+{
+  "name": "library-management-frontend",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/moment": "^2.16.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.8",
+    "chart.js": "^4.3.0",
+    "jwt-decode": "^4.0.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.16.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.1",
+    "react-scripts": "5.0.1",
+    "react-spring": "^9.7.2",
+    "react-toastify": "^9.1.3",
+    "socket.io-client": "^4.8.1",
+    "web-vitals": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:4000",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/helper-define-polyfill-provider": "^0.6.5",
+    "@babel/plugin-transform-runtime": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5"
+  }
+}

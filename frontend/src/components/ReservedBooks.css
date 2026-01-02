@@ -1,0 +1,264 @@
+/* ReservedBooks.css - Solid Red Background with White Text Theme */
+.reservedbooks-container {
+  min-height: 100vh;
+  background: #DD1445;
+  color: white;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.reservedbooks-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.reservedbooks-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.reservedbooks-table thead {
+  background: rgba(221, 20, 69, 0.9);
+}
+
+.reservedbooks-table th {
+  padding: 20px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reservedbooks-table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.3s ease;
+}
+
+.reservedbooks-table tbody tr:hover {
+  background: rgba(221, 20, 69, 0.05);
+}
+
+.reservedbooks-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.reservedbooks-table td {
+  padding: 16px;
+  color: #2d3748;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.reservedbooks-table td strong {
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-active {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-ready {
+  background: #bee3f8;
+  color: #1a365d;
+}
+
+.status-pending {
+  background: #fed7d7;
+  color: #742a2a;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+.btn-cancel {
+  background: #fed7d7;
+  color: #c53030;
+  border: 1px solid #feb2b2;
+}
+
+.btn-cancel:hover {
+  background: #feb2b2;
+  transform: translateY(-1px);
+}
+
+.btn-renew {
+  background: #c6f6d5;
+  color: #22543d;
+  border: 1px solid #9ae6b4;
+}
+
+.btn-renew:hover {
+  background: #9ae6b4;
+  transform: translateY(-1px);
+}
+
+.no-reservations {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.no-reservations h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.no-reservations p {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 1.125rem;
+  color: white;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .reservedbooks-table {
+    font-size: 0.85rem;
+  }
+  
+  .reservedbooks-table th,
+  .reservedbooks-table td {
+    padding: 14px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservedbooks-container {
+    padding: 60px 0;
+  }
+  
+  .reservedbooks-title {
+    font-size: 2.5rem;
+  }
+  
+  .reservedbooks-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .reservedbooks-table thead {
+    display: none;
+  }
+  
+  .reservedbooks-table tbody tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  
+  .reservedbooks-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f7fafc;
+  }
+  
+  .reservedbooks-table td:last-child {
+    border-bottom: none;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  
+  .reservedbooks-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #4a5568;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    min-width: 120px;
+  }
+  
+  .action-btn {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservedbooks-container {
+    padding: 40px 0;
+  }
+  
+  .reservedbooks-title {
+    font-size: 2rem;
+  }
+  
+  .reservedbooks-table tbody tr {
+    padding: 12px;
+  }
+  
+  .reservedbooks-table td {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .reservedbooks-table td::before {
+    min-width: auto;
+  }
+  
+  .action-btns {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .no-reservations {
+    padding: 60px 20px;
+  }
+  
+  .no-reservations h3 {
+    font-size: 1.25rem;
+  }
+}
